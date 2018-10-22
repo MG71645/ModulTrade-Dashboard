@@ -453,6 +453,9 @@
 }
 
 .offer__title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
     height: 43px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -518,7 +521,7 @@
     left: 0;
     right: 0;
     height: 50px;
-    background: url(../images/shadow.png) top left / 100% 10px no-repeat, url(../images/shadows.png) bottom left / 100% auto;
+    background: url(../images/shadow.png) top left / 100% 10px no-repeat, url(../images/shadows.png) bottom left / 100% 10px;
 }
 
 .offer--more:hover .offer__button {
@@ -651,7 +654,7 @@
     left: 0;
     right: 0;
     height: 50px;
-    background: url(../images/shadow.png) top left / 100% 10px no-repeat, url(../images/shadows.png) bottom left / 100% auto;
+    background: url(../images/shadow.png) top left / 100% 10px no-repeat, url(../images/shadows.png) bottom left / 100% 10px;
 }
 
 .review--more:hover .review__button {
@@ -671,4 +674,98 @@
 
 .review__dd {
     color: #122874;
+}
+
+
+
+
+
+@media screen and (max-width: 1199px) {
+    .summary {
+        flex-direction: column;
+    }
+
+    .summary__item {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+
+
+    .info__body {
+        flex-direction: column;
+    }
+
+    .info__description {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .info__description:after {
+        display: none;
+    }
+
+    .description__text {
+        position: static;
+    }
+
+    .description__more {
+        display: none;
+    }
+
+
+
+    .reputation {
+        width: auto;
+    }
+
+
+
+    .offers__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .offers__item {
+        margin-bottom: 30px;
+    }
+
+    .offers__item:not(:first-of-type):not(:last-of-type) {
+        display: none;
+    }
+
+    .offer__title {
+        height: auto;
+    }
+
+    .offer__button {
+        margin-bottom: 70px;
+    }
+
+
+
+    .review {
+        height: auto;
+    }
+
+    .reviews__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reviews__item {
+        margin-bottom: 30px;
+    }
+
+    .reviews__item:not(:first-of-type):not(:last-of-type) {
+        display: none;
+    }
+
+    .review__title {
+        height: auto;
+    }
+
+    .review__button {
+        margin-bottom: 70px;
+    }
 }
