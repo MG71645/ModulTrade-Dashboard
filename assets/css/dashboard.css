@@ -168,6 +168,11 @@
     color: #239a49;
 }
 
+.status--unverified {
+    font-weight: 700;
+    color: #8d5e00;
+}
+
 
 
 
