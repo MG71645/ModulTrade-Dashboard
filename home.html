@@ -80,7 +80,28 @@
                             <span class="badge badge--green">Soon</span>
                         </div>
                         <div class="reputation__body">
-                            <div class="reputation__widget"></div>
+                            <div class="reputation__widget widget">
+                                <div class="widget__number">0</div>
+                                <div class="widget__number">1</div>
+                                <div class="widget__number">2</div>
+                                <div class="widget__number">3</div>
+                                <div class="widget__body">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                         width="200px" height="200px" viewBox="0 0 200 200" xml:space="preserve">
+                                        <circle class="widget__back" cx="100" cy="100" r="100"/>
+                                        <circle class="widget__progress progress--135" cx="100" cy="100" r="75"/>
+                                        <rect x="99" y="2" class="widget__line" width="2" height="196"/>
+                                        <rect x="99" y="2" transform="matrix(0.7071 0.7071 -0.7071 0.7071 100 -41.4214)" class="widget__line" width="2" height="196"/>
+                                        <rect x="99" y="2" transform="matrix(4.545637e-13 1 -1 4.545637e-13 200 -4.591527e-11)" class="widget__line" width="2" height="196"/>
+                                        <rect x="99" y="2" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 241.4214 100)" class="widget__line" width="2" height="196"/>
+                                        <circle class="widget__shadow" cx="100" cy="100" r="70"/>
+                                        <circle class="widget__space" cx="100" cy="100" r="60"/>
+                                        <path class="widget__space" d="M100,100V0c26.5,0,52,10.5,70.7,29.3S200,73.5,200,100H100z"/>
+                                    </svg>
+                                </div>
+                                <div class="widget__rating">1.5</div>
+                                <div class="widget__logo" style="background-image: url(assets/images/logo.png)"></div>
+                            </div>
                         </div>
                         <div class="reputation__section">
                             <div class="reputation__soon">
@@ -229,7 +250,7 @@
                                 <div class="review__cover">
                                     <img class="cover__icon" src="assets/images/reviews.png" alt=""/>
                                 </div>
-                                <div class="review__button">All Reviews</div>
+                                <button class="review__button">All Reviews</button>
                             </div>
                         </div>
                     </div>
