@@ -357,7 +357,7 @@
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
-    grid-auto-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+    grid-template-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
 }
 
 
@@ -509,7 +509,7 @@
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
-    grid-auto-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+    grid-template-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
 }
 
 
