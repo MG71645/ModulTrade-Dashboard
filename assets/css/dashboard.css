@@ -79,6 +79,10 @@
 
 
 
+.info__toggle {
+    display: none;
+}
+
 .info__description {
     flex-grow: 1;
     position: relative;
@@ -102,9 +106,17 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0);
 }
 
+.info__toggle:checked ~ .info__description:after {
+    display: none;
+}
+
 .description__text {
     position: absolute;
     font-weight: 300;
+}
+
+.info__toggle:checked ~ .info__description .description__text {
+    position: static;
 }
 
 .description__more {
@@ -113,6 +125,16 @@
     z-index: 1;
     color: #122874;
     background: linear-gradient(to right, #122874 60%, rgba(255,255,255,0) 0%) left bottom / 8px 1px repeat-x;
+}
+
+.info__toggle:checked ~ .info__description .description__more {
+    display: none;
+}
+
+.description__more:hover {
+    cursor: pointer;
+    color: red;
+    background: linear-gradient(to right, red 60%, rgba(255,255,255,0) 0%) left bottom / 8px 1px repeat-x;
 }
 
 
@@ -155,6 +177,7 @@
     display: flex;
     flex-direction: column;
     width: 370px;
+    max-height: 500px;
     box-shadow: 0 4px 8px rgba(0,0,0, .1);
 }
 
@@ -185,6 +208,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px 0;
 }
 
 
@@ -384,6 +408,12 @@
     background: white;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0,0,0, .1);
+    transition: box-shadow .25s ease-in-out;
+}
+
+.offer:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 32px rgba(0,0,0, .25);
 }
 
 .offer__body {
@@ -472,6 +502,7 @@
     font-weight: 900;
     text-transform: uppercase;
     color: #1798d6;
+    transition: background .25s ease-in-out, color .25s ease-in-out;
 }
 
 .offer--more {
@@ -488,6 +519,11 @@
     right: 0;
     height: 50px;
     background: url(../images/shadow.png) top left / 100% 10px no-repeat, url(../images/shadows.png) bottom left / 100% auto;
+}
+
+.offer--more:hover .offer__button {
+    background: #1798d6;
+    color: white;
 }
 
 
@@ -539,6 +575,12 @@
     background: white;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0,0,0, .1);
+    transition: box-shadow .25s ease-in-out;
+}
+
+.review:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 32px rgba(0,0,0, .25);
 }
 
 .review--more {
@@ -593,6 +635,7 @@
     font-weight: 900;
     text-transform: uppercase;
     color: #1798d6;
+    transition: background .25s ease-in-out, color .25s ease-in-out;
 }
 
 .review--more {
@@ -609,6 +652,11 @@
     right: 0;
     height: 50px;
     background: url(../images/shadow.png) top left / 100% 10px no-repeat, url(../images/shadows.png) bottom left / 100% auto;
+}
+
+.review--more:hover .review__button {
+    background: #1798d6;
+    color: white;
 }
 
 .review__dl:not(:last-of-type) {
